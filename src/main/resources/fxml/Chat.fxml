@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="chat.client.ChatController" spacing="0" style="-fx-background-color: #F5F8FF;">
+    <HBox fx:id="header" alignment="CENTER_LEFT" spacing="10" style="-fx-background-color: #1F3864; -fx-padding: 10 16 10 16;">
+        <Label text="💬" style="-fx-font-size: 20px;" />
+        <VBox>
+            <Label text="Chat Room" style="-fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" />
+            <Label fx:id="userLabel" text="User: —" style="-fx-text-fill: #BDD7EE; -fx-font-size: 11px;" />
+        </VBox>
+        <Region HBox.hgrow="ALWAYS" />
+        <HBox alignment="CENTER" spacing="10">
+            <ChoiceBox fx:id="colorChoiceBox" style="-fx-background-color: rgba(255,255,255,0.2); -fx-background-radius: 15; -fx-pref-width: 80;" />
+            <Label fx:id="onlineLabel" text="0 Online" style="-fx-background-color: rgba(255,255,255,0.15); -fx-text-fill: #BDD7EE; -fx-font-size: 12px; -fx-background-radius: 20; -fx-padding: 4 12 4 12;" />
+        </HBox>
+    </HBox>
+
+    <ScrollPane fx:id="scrollPane" fitToWidth="true" VBox.vgrow="ALWAYS" style="-fx-background: #F5F8FF; -fx-background-color: #F5F8FF; -fx-border-color: transparent;">
+        <VBox fx:id="messageBox" spacing="6">
+            <padding><Insets top="12" bottom="12" /></padding>
+        </VBox>
+    </ScrollPane>
+
+    <HBox spacing="8" alignment="CENTER" style="-fx-background-color: white; -fx-padding: 10 12 10 12; -fx-border-color: #E2E8F0; -fx-border-width: 1 0 0 0;">
+        <TextField fx:id="inputField" promptText="Type a message..." HBox.hgrow="ALWAYS" style="-fx-pref-height: 38px; -fx-background-radius: 20; -fx-border-color: #BDD7EE; -fx-border-radius: 20; -fx-padding: 0 14 0 14;" />
+        <Button fx:id="sendBtn" text="Send ➤" onAction="#onSend" style="-fx-background-color: #2E75B6; -fx-text-fill: white; -fx-font-size: 13px; -fx-font-weight: bold; -fx-background-radius: 20; -fx-pref-height: 38px; -fx-padding: 0 18 0 18;" />
+    </HBox>
+</VBox>

@@ -1,0 +1,27 @@
+# 編譯產物
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE 設定
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+bin/
+nbproject/
+nb-configuration.xml
+nbactions.xml
+
+# 作業系統暫存檔
+.DS_Store
+Thumbs.db
+
+# 敏感資訊預防
+.env
+*.log
+GEMINI.md

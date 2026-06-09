@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="chat.client.LoginController" alignment="CENTER" spacing="0" style="-fx-background-color: #DEEAF1;">
+    <VBox alignment="CENTER" spacing="16" style="-fx-background-color: white; -fx-background-radius: 16; -fx-padding: 40 40 32 40;" maxWidth="340">
+        <Label text="💬" style="-fx-font-size: 36px; -fx-background-color: #2E75B6; -fx-background-radius: 50; -fx-padding: 12 14 12 14;" />
+        <Label text="Chat Room" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1e293b;" />
+        <Label text="Real-time Multi-user System" style="-fx-font-size: 12px; -fx-text-fill: #64748b;" />
+
+        <VBox spacing="6" maxWidth="300">
+            <Label text="Username" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #64748b;" />
+            <TextField fx:id="usernameField" promptText="Enter username" style="-fx-pref-height: 38px; -fx-background-radius: 8; -fx-border-color: #B5D4F4; -fx-border-radius: 8;" />
+        </VBox>
+
+        <VBox spacing="6" maxWidth="300">
+            <Label text="Password" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #64748b;" />
+            <PasswordField fx:id="passwordField" promptText="Enter password" style="-fx-pref-height: 38px; -fx-background-radius: 8; -fx-border-color: #B5D4F4; -fx-border-radius: 8;" />
+        </VBox>
+
+        <Label fx:id="errorLabel" text="" style="-fx-text-fill: #dc2626; -fx-font-size: 12px;" visible="false" />
+
+        <HBox spacing="10" alignment="CENTER" maxWidth="300">
+            <Button fx:id="loginBtn" text="Login" onAction="#onLogin" style="-fx-background-color: #2E75B6; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 8; -fx-pref-height: 40px; -fx-pref-width: 140px;" HBox.hgrow="ALWAYS" />
+            <Button fx:id="registerBtn" text="Register" onAction="#onRegister" style="-fx-background-color: #E8ECF0; -fx-text-fill: #1F3864; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 8; -fx-pref-height: 40px; -fx-pref-width: 140px;" HBox.hgrow="ALWAYS" />
+        </HBox>
+
+        <Label fx:id="statusLabel" text="Connected" style="-fx-text-fill: #22c55e; -fx-font-size: 12px;" />
+    </VBox>
+</VBox>
