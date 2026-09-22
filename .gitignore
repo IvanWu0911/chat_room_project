@@ -23,5 +23,4 @@ Thumbs.db
 
 # 敏感資訊預防
 .env
-*.log
-GEMINI.md
+*.log

@@ -12,8 +12,10 @@ import java.io.*;
 import java.net.Socket;
 
 public class ChatClient extends Application {
-    private static String HOST = System.getenv().getOrDefault("SERVER_HOST", "acela.proxy.rlwy.net");
-    private static int PORT = Integer.parseInt(System.getenv().getOrDefault("SERVER_PORT", "42808"));
+    // 伺服器位址以環境變數或命令列參數指定，預設連本機；
+    // 不把特定部署環境的主機名寫進原始碼。
+    private static String HOST = System.getenv().getOrDefault("SERVER_HOST", "localhost");
+    private static int PORT = Integer.parseInt(System.getenv().getOrDefault("SERVER_PORT", "12345"));
     private Socket socket;
     private PrintWriter out;
     private LoginController loginCtrl;
