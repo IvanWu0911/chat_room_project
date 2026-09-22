@@ -6,6 +6,13 @@
 
 **作者：[IvanWu0911](https://github.com/IvanWu0911)** ｜ Java 17 · JavaFX 21 · Socket · PostgreSQL
 
+| 登入／註冊 | 聊天室 |
+|---|---|
+| ![登入](docs/screenshots/login.png) | ![聊天室](docs/screenshots/chat.png) |
+
+訊息氣泡依發送者左右分流，標頭顯示目前線上人數與主題配色選單；
+登入後會先載入歷史訊息，並以 `--- History Messages Above ---` 與新訊息分隔。
+
 ---
 
 ## 架構
