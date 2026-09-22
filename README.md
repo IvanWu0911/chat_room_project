@@ -4,7 +4,9 @@
 > 支援帳號註冊／登入、即時群聊、歷史訊息回溯、線上人數同步與訊息音效，
 > 伺服器以 Docker 部署於 Railway，客戶端從任何電腦連線。
 
-**作者：[IvanWu0911](https://github.com/IvanWu0911)** ｜ Java 17 · JavaFX 21 · Socket · PostgreSQL
+**課程分組專案 ｜ 擔任組長：[IvanWu0911](https://github.com/IvanWu0911)**
+
+Java 17 · JavaFX 21 · Socket · PostgreSQL
 
 | 登入／註冊 | 聊天室 |
 |---|---|
